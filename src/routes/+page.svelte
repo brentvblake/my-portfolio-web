@@ -54,7 +54,7 @@
             "title": "This Website",
             "description": "A personal website to showcase my projects and skills",
             "image": "site.png",
-            "link": "/"
+            "link": "https://github.com/brentvblake/my-portfolio-web"
         },
     ];
 </script>
@@ -125,3 +125,5 @@
 </section>
 </main>
 </body>
+
+
