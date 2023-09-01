@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  background: rgb(17,77,0);
+  background: linear-gradient(270deg, rgba(17,77,0,1) 0%, rgba(10,10,10,1) 100%);
+}
+
+body {
+    margin: 0;
+    font-family: 'Modeseven', sans-serif;
+}
+
+.center-title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.glass-container {
+  background: linear-gradient(135deg, rgba(0,154,34, 0.1), rgba(0,154,34, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(0,154,34, 0.18);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+@font-face {
+  font-family: 'Modeseven';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/Modeseven-L3n5.ttf') format('truetype');
+}
+
+
+
+
+  
