@@ -18,13 +18,13 @@
             "title": "Laundry Kiosk Application",
             "description": "This work is a showcase of a laundry kiosk application I'm developing in flutter, it will provide easy access to laundry services via cashless payment systems.",
             "image": "kiosk.png",
-            "link": "/"
+            "link": ""
         },
         {
             "title": "Automated Card Scanner/Printer",
             "description": "This project is a showcase of an automated card scanner/printer I developed for a client. It runs on a desktop pc and connects to a RFID card scanner and a thermal card printer.",
             "image": "card.png",
-            "link": "/"
+            "link": ""
         },
         {
             "title": "Personal Protection Equipment (PPE) Vending App",
