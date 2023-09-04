@@ -30,7 +30,7 @@ body {
   font-family: 'Modeseven';
   font-style: normal;
   font-weight: 500;
-  src: url('fonts/Modeseven-L3n5.ttf') format('truetype');
+  src: url('./fonts/Modeseven-L3n5.ttf') format('truetype');
 }
 
 
