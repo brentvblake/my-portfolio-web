@@ -10,7 +10,8 @@ const config = {
 		adapter: adapter(),
 		paths: {
 			base: dev ? '' : process.env.BASE_PATH,
-			assets: dev ? '' : process.env.BASE_PATH
+			//set absolute paths for assets in production
+			assets: dev ? '' : "/website/"
 		}
 	},
 	preprocess: vitePreprocess()
