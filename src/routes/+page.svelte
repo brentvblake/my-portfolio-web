@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="md:fixed bottom-4 left-1/2 md:left-[20%] md:transform md:-translate-x-1/2 flex items-center space-x-4">
-            <img src="/dino.png" alt="Brent" class="w-10 h-10 rounded-full ring-4 ring-secondary">
+            <img src="my-portfolio-web/dino.png" alt="Brent" class="w-10 h-10 rounded-full ring-4 ring-secondary">
             <div class="flex space-x-4">
                 <div class="flex items-center space-x-2 text-tertiary bg-secondary p-4 rounded-lg glass-container">
                     <a href="https://github.com/brentvblake" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2">
