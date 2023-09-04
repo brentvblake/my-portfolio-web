@@ -79,16 +79,16 @@
             <div class="flex space-x-4">
                 <div class="flex items-center space-x-2 text-tertiary bg-secondary p-4 rounded-lg glass-container">
                     <a href="https://github.com/brentvblake" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2">
-                        <img src="/github.svg" alt="GitHub logo" class="w-6 h-6 text-tertiary fill=currentColor">
+                        <img src="github.svg" alt="GitHub logo" class="w-6 h-6 text-tertiary fill=currentColor">
                         <span>Github</span>
-                        <img src="/share.svg" alt="share icon" class="w-6 h-6 text-tertiary fill=currentColor">
+                        <img src="share.svg" alt="share icon" class="w-6 h-6 text-tertiary fill=currentColor">
                     </a>
                 </div>
                 <div class="flex items-center space-x-2 text-tertiary bg-secondary p-4 rounded-lg glass-container">
                     <a href="https://linkedin.com/in/brentvblake" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2">
-                        <img src="/linkedin.svg" alt="LinkedIn logo" class="w-6 h-6 text-tertiary fill=currentColor">
+                        <img src="linkedin.svg" alt="LinkedIn logo" class="w-6 h-6 text-tertiary fill=currentColor">
                         <span>LinkedIn</span>
-                        <img src="/share.svg" alt="share icon" class="w-6 h-6 text-tertiary fill=currentColor">
+                        <img src="share.svg" alt="share icon" class="w-6 h-6 text-tertiary fill=currentColor">
                     </a>
                 </div>
             </div>
