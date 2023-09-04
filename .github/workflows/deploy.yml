@@ -57,4 +57,4 @@ jobs:
         id: deployment
         uses: peaceiris/actions-gh-pages@v3
         with:
-        personal_token: ${{ secrets.GH_PAGES_TOKEN }} # Use the secret here
+          personal_token: ${{ secrets.GH_PAGES_TOKEN }} # Use the secret here
