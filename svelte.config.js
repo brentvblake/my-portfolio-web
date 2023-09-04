@@ -11,7 +11,7 @@ const config = {
 		paths: {
 			base: dev ? '' : process.env.BASE_PATH,
 			//set absolute paths for assets in production
-			assets: dev ? '' : "/website/"
+			//assets: dev ? '' : "/website/"
 		}
 	},
 	preprocess: vitePreprocess()
