@@ -15,7 +15,7 @@ const config = {
 		  strict: true
 		}),
 		paths: {
-			base: dev ? '' : '/my-portfolio-web',
+			base: dev ? '' : process.env.BASE_PATH,
 		  }
 	  }
 };
