@@ -61,6 +61,27 @@
 
 <body>
     <Background />
+    <script>
+        // Function to detect screen size and toggle a CSS class
+        function toggleHoverEffect() {
+            const isMobile = window.innerWidth <= 768; // You can adjust this breakpoint
+            const projectElements = document.querySelectorAll('.project-element');
+            
+            projectElements.forEach((element) => {
+                if (isMobile) {
+                    element.classList.remove('hoverable');
+                } else {
+                    element.classList.add('hoverable');
+                }
+            });
+        }
+        
+        // Initial call to set the class based on screen size
+        toggleHoverEffect();
+        
+        // Listen for window resize events to update the class
+        window.addEventListener('resize', toggleHoverEffect);
+    </script>
 <main class="flex flex-col items-center md:flex-row">
     
 	<section class="w-full md:w-2/5 p-20 text-secondary overflow-y-auto md:fixed top-0">
@@ -74,55 +95,56 @@
                 <!-- Add more personal information as needed -->
             </div>
         </div>
-        <div class="md:fixed bottom-4 left-1/2 md:left-[20%] md:transform md:-translate-x-1/2 flex items-center space-x-4">
-            <img src="dino.png" alt="Brent" class="w-10 h-10 rounded-full ring-4 ring-secondary">
-            <div class="flex space-x-4">
+        <div class="flex justify-center mt-20 md:mt-80"> <!-- Center the content horizontally -->
+            <div class="flex items-center space-x-4">
+              <img src="dino.png" alt="Brent" class="w-10 h-10 rounded-full ring-4 ring-secondary">
+              <div class="flex space-x-4">
                 <div class="flex items-center space-x-2 text-tertiary bg-secondary p-4 rounded-lg glass-container">
-                    <a href="https://github.com/brentvblake" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2">
-                        <img src="github.svg" alt="GitHub logo" class="w-6 h-6 text-tertiary fill=currentColor">
-                        <span>Github</span>
-                        <img src="share.svg" alt="share icon" class="w-6 h-6 text-tertiary fill=currentColor">
-                    </a>
+                  <a href="https://github.com/brentvblake" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2">
+                    <img src="github.svg" alt="GitHub logo" class="w-6 h-6 text-tertiary fill=currentColor">
+                    <span class="hidden md:block">GitHub</span> <!-- Hide on small screens -->
+                  </a>
                 </div>
                 <div class="flex items-center space-x-2 text-tertiary bg-secondary p-4 rounded-lg glass-container">
-                    <a href="https://linkedin.com/in/brentvblake" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2">
-                        <img src="linkedin.svg" alt="LinkedIn logo" class="w-6 h-6 text-tertiary fill=currentColor">
-                        <span>LinkedIn</span>
-                        <img src="share.svg" alt="share icon" class="w-6 h-6 text-tertiary fill=currentColor">
-                    </a>
+                  <a href="https://linkedin.com/in/brentvblake" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2">
+                    <img src="linkedin.svg" alt="LinkedIn logo" class="w-6 h-6 text-tertiary fill=currentColor">
+                    <span class="hidden md:block">LinkedIn</span> <!-- Hide on small screens -->
+                  </a>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
+          
+          
+          
+          
         
         
 	</section>
 	
 	
 	<section class="w-full md:w-3/5 md:ml-[40%] mt-10 md:mt-0 overflow-y-auto">
-    <div class="container px-6 py-10 mx-auto">
-
-        <div class="flex justify-items-center">
-            <h1 class="text-4xl font-semibold text-center text-secondary bg-tertiary p-2 rounded-lg inline-block mx-auto glass-container">Projects
-            </h1>
-        </div>
-        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-1 xl:grid-cols-1">
-            {#each projects as project}
-            <div class="overflow-hidden bg-center bg-cover rounded-lg cursor-pointer h-96 group"
-                style={"background-image:url("+project.image +")"}>
-                <a href={project.link} target="_blank">
-                    <div
-                        class="flex flex-col justify-center w-full h-full px-8 py-4 bg-black/60 transition-opacity duration-700 opacity-0 backdrop-blur-sm group-hover:opacity-100">
-                        <div class="bg-dark/50 p-2 rounded-lg">
-                        <h2 class="mt-2 text-xl font-semibold text-secondary capitalize">{project.title}</h2>
-                        <p class="mt-2 text-lg tracking-wider text-white uppercase ">{project.description}</p>
-                    </div>
-                    </div>
-                </a>
+        <div class="container px-6 py-10 mx-auto">
+            <div class="flex justify-items-center">
+                <h1 class="text-4xl font-semibold text-center text-secondary bg-tertiary p-2 rounded-lg inline-block mx-auto glass-container">Projects</h1>
             </div>
-            {/each}
+            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-1 xl:grid-cols-1">
+                {#each projects as project}
+                <div class="overflow-hidden bg-center bg-cover rounded-lg cursor-pointer h-96 group project-element hoverable"
+                    style={"background-image:url("+project.image +")"}>
+                    <a href={project.link} target="_blank">
+                        <div class="flex flex-col justify-center w-full h-full px-8 py-4 bg-black/60 transition-opacity duration-700 opacity-0 backdrop-blur-sm group-hover:opacity-100">
+                            <div class="bg-dark/50 p-2 rounded-lg">
+                                <h2 class="mt-2 text-xl font-semibold text-secondary capitalize">{project.title}</h2>
+                                <p class="mt-2 text-lg tracking-wider text-white uppercase ">{project.description}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {/each}
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 </main>
 </body>
 
