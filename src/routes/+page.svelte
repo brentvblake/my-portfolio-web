@@ -88,14 +88,18 @@
 		<div class = "flex justify-center">
             <div class="mt-10 md:mt-0 p-5 md:p-5 bg-tertiary rounded-lg inline-block glass-container">
                 <h2 class="text-2xl font-semibold capitalize text-center pb-5">Brent Blake</h2>
+                <div class="flex justify-center pb-5">
+                    <img src="brent.JPG" alt="Brent" class="w-40 h-40 rounded-full ring-2 ring-secondary ring-opacity-25"style="object-fit: cover;">
+                </div>
                 <p class="text-lg">Cape Town, South Africa 🇿🇦</p>
-                <p class="text-lg">github.com/brentvblake</p>
-                <p class="text-lg">brent99blake@gmail.com</p>
-                <p class="text-lg">linkedin.com/in/brentvblake</p>
+                <a href="https://github.com/brentvblake" class="text-lg" target="_blank">github.com/brentvblake</a>
+                <a href="mailto:brent99blake@gmail.com" class="text-lg">brent99blake@gmail.com</a>
+                <a href="https://www.linkedin.com/in/brentvblake" class="text-lg" target="_blank">linkedin.com/in/brentvblake</a>
+
                 <!-- Add more personal information as needed -->
             </div>
         </div>
-        <div class="flex justify-center mt-20 md:mt-80"> <!-- Center the content horizontally -->
+        <div class="flex justify-center mt-20 md:mt-75"> <!-- Center the content horizontally -->
             <div class="flex items-center space-x-4">
               <img src="dino.png" alt="Brent" class="w-10 h-10 rounded-full ring-4 ring-secondary">
               <div class="flex space-x-4">
